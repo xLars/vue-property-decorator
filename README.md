@@ -1,7 +1,7 @@
-## This is a fork of *Vue Property Decorator* to add some decorators for NativeScript
+## Vue property decorator repo with some additional NativeScript decorators
 The following decorators were added:
 ```ts
-// Reference to a NativeScript View
+// Reference a NativeScript View
 @RefView()
 ```
 
