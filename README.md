@@ -1,7 +1,9 @@
-### This is a fork of Vue Property Decorator and adds decorators for NativeScript
-@RefView() to access the nativeView of an Element
-
-# Vue Property Decorator
+## This is a fork of *Vue Property Decorator* to add some decorators for NativeScript
+The following decorators were added:
+```ts
+// Reference to a NativeScript View
+@RefView()
+```
 
 [![npm](https://img.shields.io/npm/v/vue-property-decorator.svg)](https://www.npmjs.com/package/vue-property-decorator)
 [![Build Status](https://travis-ci.org/kaorun343/vue-property-decorator.svg?branch=master)](https://travis-ci.org/kaorun343/vue-property-decorator)
