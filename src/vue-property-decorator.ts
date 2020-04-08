@@ -312,6 +312,22 @@ export function Ref(refKey?: string) {
   })
 }
 
+/**
+ * decorator of a ref prop for a NativeScript View
+ * @param refKey the ref key defined in template
+ */
+export function RefView(refKey?: string) {
+  return createDecorator((options, key) => {
+    options.computed = options.computed || {}
+    options.computed[key] = {
+      cache: false,
+      get(this: Vue) {
+        return (this.$refs[refKey || key] as any).nativeView
+      },
+    }
+  })
+}
+
 function isPromise(obj: any): obj is Promise<any> {
   return obj instanceof Promise || (obj && typeof obj.then === 'function')
 }
